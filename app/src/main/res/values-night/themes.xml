@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.WitteLibrary" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">#c21631</item>
+        <item name="colorPrimary">#c21631</item>
+        <item name="android:navigationBarColor">#c21631</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+
+
+    <style name="Theme.WitteLibrary" parent="Base.Theme.WitteLibrary" />
+</resources>

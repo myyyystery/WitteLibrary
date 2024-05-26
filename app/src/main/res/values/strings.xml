@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">WitteLibrary</string>
+    <string name="page_info_format">Страница %1$d из %2$d</string>
+</resources>

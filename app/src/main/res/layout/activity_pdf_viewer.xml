@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PdfViewerActivity">
+
+    <ImageView
+        android:id="@+id/pdfView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/seekBar"
+        android:layout_marginBottom="-13dp"
+        android:scaleType="fitXY" />
+
+
+    <TextView
+        android:id="@+id/pageInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:background="#88000000"
+        android:padding="8dp"
+        android:text="Page Info" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@id/pageInfo"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="0dp"
+        android:max="100"
+        android:progress="0" />
+
+    <Button
+        android:id="@+id/prevButton"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignBaseline="@id/pageInfo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="-3dp"
+        android:layout_toStartOf="@+id/pageInfo"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="Назад"
+        android:textColor="@android:color/black" />
+
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignBaseline="@id/pageInfo"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/pageInfo"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="Вперед"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>
